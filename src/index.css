@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --shell: #fbf7f2;
+  --ink: #1f1830;
+  --stone: #635c72;
+  --berry: #7b2859;
+  --dusk: #35264a;
+  --rose: #f4d6e3;
+  --cream: #fffdfc;
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { min-height: 100%; }
+body {
+  font-family: var(--font-body);
+  background: var(--shell);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+input, textarea, button, select {
+  font: inherit;
+}
+
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr !important; }
+  .content-grid { grid-template-columns: 1fr !important; }
+  .layer-strip { grid-template-columns: 1fr !important; }
+}
